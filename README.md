@@ -2,16 +2,24 @@
   <img src="docs/assets/banner.svg" alt="SysScope Banner" width="100%">
 </p>
 
-# SysScope
+<p align="center">
+  <img src="docs/assets/logo.svg" alt="SysScope Logo" width="72" height="72">
+</p>
 
-**Unified C++20 Linux System Observability & Near-Real-Time Performance Diagnostics Platform**
+<h1 align="center">SysScope</h1>
 
-[![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B20)
-[![Linux](https://img.shields.io/badge/Platform-Linux%20%2F%20POSIX-orange.svg)](https://www.kernel.org/)
-[![Qt 6](https://img.shields.io/badge/UI-Qt%206-green.svg)](https://www.qt.io/)
-[![SQLite](https://img.shields.io/badge/Storage-SQLite3-lightblue.svg)](https://www.sqlite.org/)
-[![Build Status](https://img.shields.io/badge/Tests-28%2F28%20PASS-brightgreen.svg)](tests/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<p align="center">
+  <b>Unified C++20 Linux System Observability &amp; Near-Real-Time Performance Diagnostics Platform</b>
+</p>
+
+<p align="center">
+  <a href="https://en.wikipedia.org/wiki/C%2B%2B20"><img src="https://img.shields.io/badge/C%2B%2B-20-blue.svg" alt="C++20"></a>
+  <a href="https://www.kernel.org/"><img src="https://img.shields.io/badge/Platform-Linux%20%2F%20POSIX-orange.svg" alt="Linux"></a>
+  <a href="https://www.qt.io/"><img src="https://img.shields.io/badge/UI-Qt%206-green.svg" alt="Qt 6"></a>
+  <a href="https://www.sqlite.org/"><img src="https://img.shields.io/badge/Storage-SQLite3-lightblue.svg" alt="SQLite"></a>
+  <a href="tests/"><img src="https://img.shields.io/badge/Tests-28%2F28%20PASS-brightgreen.svg" alt="Tests"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+</p>
 
 ```
 28/28 Core Tests Pass  │  0.18% Core CPU Overhead  │  0.45 ms P99 Latency
