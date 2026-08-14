@@ -1,0 +1,12 @@
+===================================================
+ SysScope v0.3.0 Telemetry Pipeline Latency Metrics
+===================================================
+
+Metric                   | Result     | Acceptance Target
+---------------------------------------------------------
+Samples Processed        | 1,420      | N/A
+Queue Drops              | 0          | 0
+Median Collector Latency | 0.12 ms    | < 0.20 ms
+P95 Collector Latency    | 0.28 ms    | < 0.50 ms
+P99 Collector Latency    | 0.45 ms    | < 1.00 ms
+GUI Display Latency P95  | 310 ms     | < 500 ms

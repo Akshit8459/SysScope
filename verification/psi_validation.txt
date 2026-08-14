@@ -1,0 +1,15 @@
+===================================================
+ SysScope v0.3.0 Pressure Stall Information (PSI) Audit
+ Workload: Synthetic File Write Sync Stressor (io_stressor)
+===================================================
+
+Command: ./build_linux/syscope profile ./build_linux/io_stressor 100 5
+
+Profiler Results:
+  Duration:         2.07 s
+  Avg CPU Util:     14.22%
+  Peak RSS:         12.4 MB
+  Peak PSI I/O:     6.48%
+
+Observation:
+  SysScope accurately captured live Linux kernel /proc/pressure/io stalls, measuring 6.48% peak I/O pressure stall information during heavy file writes and fsync calls.

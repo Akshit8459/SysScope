@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "linux-gcc",
+      "displayName": "Linux GCC x86_64",
+      "description": "Native Linux build using GCC C++20",
+      "binaryDir": "${sourceDir}/build_linux",
+      "generator": "Unix Makefiles",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "BUILD_TESTS": "ON"
+      }
+    },
+    {
+      "name": "arm64-cross",
+      "displayName": "ARM64 Linux Cross-Compilation",
+      "description": "Cross-compile for ARM64 AArch64 Linux",
+      "binaryDir": "${sourceDir}/build_arm64",
+      "generator": "Unix Makefiles",
+      "toolchainFile": "${sourceDir}/cmake/toolchain-aarch64-linux-gnu.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "BUILD_TESTS": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "linux-gcc",
+      "configurePreset": "linux-gcc"
+    },
+    {
+      "name": "arm64-cross",
+      "configurePreset": "arm64-cross"
+    }
+  ]
+}

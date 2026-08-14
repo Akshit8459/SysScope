@@ -1,0 +1,36 @@
+# Build Directories
+build/
+build_linux/
+build_arm64/
+bin/
+lib/
+out/
+
+# Binary & Compiled Artifacts
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Database & Runtime Artifacts
+*.db
+*.db-journal
+*.log
+/tmp/sysscope*
+
+# IDE & Editor Files
+.vscode/
+.idea/
+.vs/
+*.user
+*.suo
+*.userosv
+*.sln.docstates
+
+# OS Generated Files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,37 @@
+===================================================
+ SysScope v0.3.0 Unit & Integration Test Suite Audit
+ Executed: 2026-08-14 | Host: Linux x86_64
+===================================================
+
+[RUN] LiveLinuxInvariants::KernelTelemetryInvariants ... PASSED
+[RUN] Core::Timestamp Basic Functionality ... PASSED
+[RUN] Core::Types String Conversions ... PASSED
+[RUN] Util::Format Formatting Helpers ... PASSED
+[RUN] Collectors::CpuCollector Single and Two Snapshot Utilization Calculations ... PASSED
+[RUN] FailurePaths::MissingProcStat Handling ... PASSED
+[RUN] FailurePaths::MalformedMeminfo Handling ... PASSED
+[RUN] FailurePaths::MalformedProcessStat Handling ... PASSED
+[RUN] FailurePaths::MissingPsiFiles Handling ... PASSED
+[RUN] Platform::MockNetlinkReader Link Stats Query ... PASSED
+[RUN] Platform::RealFileSystemReader Error On NonExistent File ... PASSED
+[RUN] Collectors::NetworkCollector Interface Parsing ... PASSED
+[RUN] Collectors::ThermalCollector Dynamic Thermal Zone Mapping ... PASSED
+[RUN] Analytics::CorrelationEngine Thermal Throttling Diagnosis ... PASSED
+[RUN] Analytics::CorrelationEngine CpuSchedulingContention Diagnosis ... PASSED
+[RUN] Analytics::CorrelationEngine IoBottleneck Diagnosis ... PASSED
+[RUN] Storage::MockPersistenceEngine Storage and Querying ... PASSED
+[RUN] Ipc::MockIpcSubsystem Server and Client Communication ... PASSED
+[RUN] Platform::AcceleratorBackend Qualcomm and NVIDIA Backends ... PASSED
+[RUN] Storage::SqlitePersistenceEngine Storage and TimeSeries Queries ... PASSED
+[RUN] Ipc::RealIpcSubsystem Real Socket Connection ... PASSED
+[RUN] Collectors::MemoryCollector MemAvailable Priority Calculation ... PASSED
+[RUN] Platform::MockFileSystemReader File and Directory Operations ... PASSED
+[RUN] Collectors::ProcessCollector Process Parsing and Process Tree Building ... PASSED
+[RUN] Collectors::PsiCollector Pressure Stall Information Parsing ... PASSED
+[RUN] Core::Result Success and Error Cases ... PASSED
+[RUN] Telemetry::BoundedQueue Capacity Overflow and Push/Pop ... PASSED
+[RUN] Telemetry::TelemetryScheduler Multi-Rate Task Execution ... PASSED
+
+===================================================
+ Test Results: 28 Passed, 0 Failed.
+===================================================

@@ -1,0 +1,16 @@
+===================================================
+ SysScope v0.3.0 Memory Stress Profiler Audit
+ Workload: Controlled Memory Allocator (memory_stressor)
+===================================================
+
+Command: ./build_linux/syscope profile ./build_linux/memory_stressor 500 5
+
+Profiler Results:
+  Duration:         5.01 s
+  Avg CPU Util:     24.15%
+  Peak RSS:         1.16 GB
+  Memory Growth:    530.85 MB
+  Peak PSI Mem:     0.00%
+
+Observation:
+  SysScope accurately tracked the 500 MB heap RAM allocation and worker thread stack allocations, recording 530.85 MB memory growth and 1.16 GB peak RSS memory.

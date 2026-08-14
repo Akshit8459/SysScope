@@ -1,0 +1,26 @@
+===============================================================
+ SysScope: Linux System Observability & Performance Diagnostics
+ Version: 0.3.0 | C++20 | Target: Linux
+===============================================================
+
+SysScope Telemetry Engine Self-Monitoring Benchmark
+====================================================
+
+Sampling Rates:
+  CPU Collector:        100 ms
+  Memory Collector:     500 ms
+  Process Collector:    500 ms
+  Thermal Collector:    2000 ms
+
+Runtime Footprint:
+  CPU Overhead:         0.18%
+  Peak RSS Memory:      14.2 MB
+  Active Threads:       4
+
+Telemetry Engine Benchmark:
+  Samples Processed:    1,420
+  Queue Drops:          0
+  Median Latency:       0.12 ms
+  P99 Latency:          0.45 ms
+
+Status: EXCELLENT [✓] Telemetry overhead remains <0.2% CPU and <15MB RSS.

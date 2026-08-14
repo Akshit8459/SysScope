@@ -1,0 +1,22 @@
+===================================================
+ SysScope v0.3.0 ARM64 AArch64 Cross-Compilation Audit
+ Toolchain: gcc-aarch64-linux-gnu / g++-aarch64-linux-gnu
+===================================================
+
+Command:
+  cmake -B build_arm64 -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain-aarch64-linux-gnu.cmake
+  cmake --build build_arm64
+
+Output:
+  [ 52%] Built target sysscope_core
+  [ 56%] Built target syscope
+  [ 61%] Built target synthetic_load
+  [ 65%] Built target memory_stressor
+  [ 70%] Built target io_stressor
+  [100%] Built target syscope_test_suite
+
+Binary Inspection:
+  file ./build_arm64/syscope
+  -> ./build_arm64/syscope: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), dynamically linked, for GNU/Linux 3.7.0, not stripped
+
+Status: PASS (ARM64 Cross-Compilation Verified; Target Hardware Deployment Pending).
