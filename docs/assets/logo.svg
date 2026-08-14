@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#11111b"/>
+    </linearGradient>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#89b4fa"/>
+      <stop offset="50%" stop-color="#a6e3a1"/>
+      <stop offset="100%" stop-color="#cba6f7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Container Squircle -->
+  <rect x="5" y="5" width="110" height="110" rx="28" fill="url(#logoBg)" stroke="#313244" stroke-width="2"/>
+
+  <!-- Telemetry Pulse Wave / Diagnostic Ring -->
+  <!-- Outer Gauge Arc -->
+  <circle cx="60" cy="60" r="38" fill="none" stroke="#313244" stroke-width="3" stroke-dasharray="180 60" transform="rotate(-90 60 60)"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="url(#pulseGrad)" stroke-width="3" stroke-dasharray="140 100" transform="rotate(-90 60 60)" stroke-linecap="round"/>
+
+  <!-- Pulse Line Signal -->
+  <path d="M 30 60 L 44 60 L 51 44 L 59 78 L 67 38 L 74 65 L 80 60 L 90 60" fill="none" stroke="url(#pulseGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <!-- Diagnostic Node Points -->
+  <circle cx="51" cy="44" r="3" fill="#89b4fa"/>
+  <circle cx="67" cy="38" r="3.5" fill="#a6e3a1"/>
+  <circle cx="74" cy="65" r="3" fill="#cba6f7"/>
+</svg>

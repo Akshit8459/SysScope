@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" style="background:#11111b; font-family:'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181825"/>
+      <stop offset="50%" stop-color="#11111b"/>
+      <stop offset="100%" stop-color="#0f0f17"/>
+    </linearGradient>
+
+    <!-- Accent Glow Gradients -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#89b4fa"/>
+      <stop offset="50%" stop-color="#a6e3a1"/>
+      <stop offset="100%" stop-color="#cba6f7"/>
+    </linearGradient>
+    
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#313244"/>
+      <stop offset="100%" stop-color="#1e1e2e"/>
+    </linearGradient>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e1e2e" stroke-width="1" stroke-dasharray="2,4"/>
+    </pattern>
+
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Banner Container -->
+  <rect x="0" y="0" width="1200" height="320" rx="12" fill="url(#bannerBg)"/>
+  <rect x="0" y="0" width="1200" height="320" rx="12" fill="url(#grid)" opacity="0.7"/>
+
+  <!-- Top Decorative Accent Line -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- LOGO ICON (Left Side) -->
+  <g transform="translate(60, 80)">
+    <rect x="0" y="0" width="160" height="160" rx="40" fill="url(#logoBg)" stroke="#45475a" stroke-width="2"/>
+    <circle cx="80" cy="80" r="54" fill="none" stroke="#313244" stroke-width="4" stroke-dasharray="260 80" transform="rotate(-90 80 80)"/>
+    <circle cx="80" cy="80" r="54" fill="none" stroke="url(#brandGrad)" stroke-width="4" stroke-dasharray="200 140" transform="rotate(-90 80 80)" stroke-linecap="round"/>
+    
+    <!-- Pulse Line Signal -->
+    <path d="M 35 80 L 55 80 L 65 55 L 77 105 L 89 45 L 99 90 L 107 80 L 125 80" fill="none" stroke="url(#brandGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowEffect)"/>
+    
+    <!-- Nodes -->
+    <circle cx="65" cy="55" r="4" fill="#89b4fa"/>
+    <circle cx="89" cy="45" r="5" fill="#a6e3a1"/>
+    <circle cx="99" cy="90" r="4" fill="#cba6f7"/>
+  </g>
+
+  <!-- TYPOGRAPHY & BRANDING (Center-Left) -->
+  <text x="250" y="145" fill="#cdd6f4" font-size="56" font-weight="800" letter-spacing="-1">SysScope</text>
+  <text x="250" y="185" fill="#a6adc8" font-size="20" font-weight="500">Unified C++20 Linux System Observability &amp; Diagnostics Platform</text>
+
+  <!-- SPEC BADGES (Row) -->
+  <g transform="translate(250, 215)">
+    <!-- Badge 1: C++20 -->
+    <rect x="0" y="0" width="85" height="30" rx="6" fill="#1e1e2e" stroke="#89b4fa" stroke-width="1"/>
+    <text x="42.5" y="19" text-anchor="middle" fill="#89b4fa" font-size="12" font-weight="700">C++20</text>
+
+    <!-- Badge 2: Linux POSIX -->
+    <rect x="95" y="0" width="115" height="30" rx="6" fill="#1e1e2e" stroke="#fab387" stroke-width="1"/>
+    <text x="152.5" y="19" text-anchor="middle" fill="#fab387" font-size="12" font-weight="700">Linux / POSIX</text>
+
+    <!-- Badge 3: Qt 6 Visualizer -->
+    <rect x="220" y="0" width="120" height="30" rx="6" fill="#1e1e2e" stroke="#a6e3a1" stroke-width="1"/>
+    <text x="280" y="19" text-anchor="middle" fill="#a6e3a1" font-size="12" font-weight="700">Qt 6 Visualizer</text>
+
+    <!-- Badge 4: PSI Telemetry -->
+    <rect x="350" y="0" width="115" height="30" rx="6" fill="#1e1e2e" stroke="#f9e2af" stroke-width="1"/>
+    <text x="407.5" y="19" text-anchor="middle" fill="#f9e2af" font-size="12" font-weight="700">PSI Telemetry</text>
+
+    <!-- Badge 5: ARM64 -->
+    <rect x="475" y="0" width="85" height="30" rx="6" fill="#1e1e2e" stroke="#cba6f7" stroke-width="1"/>
+    <text x="517.5" y="19" text-anchor="middle" fill="#cba6f7" font-size="12" font-weight="700">ARM64</text>
+  </g>
+
+  <!-- METRIC HIGHLIGHT CHIP (Right Side) -->
+  <g transform="translate(880, 80)">
+    <rect x="0" y="0" width="260" height="160" rx="12" fill="#1e1e2e" stroke="#313244" stroke-width="1"/>
+    
+    <text x="20" y="35" fill="#a6adc8" font-size="12" font-weight="600">CORE BENCHMARK</text>
+    <text x="20" y="65" fill="#a6e3a1" font-size="22" font-weight="700">28/28 PASS</text>
+    
+    <line x1="20" y1="80" x2="240" y2="80" stroke="#313244" stroke-width="1"/>
+
+    <text x="20" y="105" fill="#89b4fa" font-size="13" font-weight="600">Core Overhead: <tspan fill="#cdd6f4">0.18%</tspan></text>
+    <text x="20" y="127" fill="#89b4fa" font-size="13" font-weight="600">P99 Latency: <tspan fill="#cdd6f4">0.45 ms</tspan></text>
+    <text x="20" y="147" fill="#89b4fa" font-size="13" font-weight="600">Queue Drops: <tspan fill="#a6e3a1">0</tspan></text>
+  </g>
+</svg>

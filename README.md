@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/banner.svg" alt="SysScope Banner" width="100%">
+</p>
+
 # SysScope
 
 **Unified C++20 Linux System Observability & Near-Real-Time Performance Diagnostics Platform**
