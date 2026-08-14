@@ -2,11 +2,9 @@
   <img src="docs/assets/banner.svg" alt="SysScope Banner" width="100%">
 </p>
 
-<p align="center">
-  <img src="docs/assets/logo.svg" alt="SysScope Logo" width="72" height="72">
-</p>
-
-<h1 align="center">SysScope</h1>
+<h1 align="center">
+  <img src="docs/assets/logo.svg" alt="SysScope Logo" width="42" height="42" align="absmiddle"> SysScope
+</h1>
 
 <p align="center">
   <b>Unified C++20 Linux System Observability &amp; Near-Real-Time Performance Diagnostics Platform</b>
